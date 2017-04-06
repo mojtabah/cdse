@@ -24,3 +24,7 @@ vowpal-wabbit (https://github.com/JohnLangford/vowpal_wabbit) as a versatile com
 * Once in the virtual machine, install the vowpal wabbit library. 
   * You can install it directly from source https://github.com/JohnLangford/vowpal_wabbit
   * You can also install it using 'sudo apt-get install vowpal-wabbit' within the vagrant session
+* Clone this repo
+  <pre><code>
+    git clone https://github.com/sharatsc/cdse/
+  </code></pre>
