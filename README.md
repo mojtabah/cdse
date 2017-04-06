@@ -1,4 +1,6 @@
-# CDSE Data science at the command line workshop
+# CDSE Data science at the command line workshop 
+
+(http://www.buffalo.edu/cdse/CDSEdayslanding1/cdse-days2017/faculty_directory/SharatChikkerur1.html)
 
 ## Abstract
 The workshop will present how to combine tools to quickly query, transform and model data using command line tools.
