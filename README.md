@@ -28,3 +28,7 @@ vowpal-wabbit (https://github.com/JohnLangford/vowpal_wabbit) as a versatile com
   <pre><code>
     git clone https://github.com/sharatsc/cdse/
   </code></pre>
+* If you'd like to run the examples in this repo, you should also install the following
+<pre><code>
+  sudo apt-get install ipython-notebook python-statsmodels python-matplotlib
+</code></pre>
