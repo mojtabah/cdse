@@ -73,3 +73,11 @@ echo '{"foo": 10}' | jq '.foo + 1'
 echo '{"foo": [1,2,3], "bar": [11,12,13]}' | jq '.foo + .bar'
 [1,2,3,11,12,13]
 </code></pre>
+
+## Exercise
+Explore the commits to the repository
+<pre><code>
+# Getting commits
+curl https://api.github.com/repos/sharatsc/cdse/commits  | more
+curl https://api.github.com/repos/sharatsc/cdse/commits | jq '.[]|.commit.message'
+</code></pre>
