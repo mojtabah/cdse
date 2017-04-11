@@ -57,6 +57,19 @@ echo '{"foo": "A", "bar": ["X", "Y"]}' | jq '{(.foo): .bar[]}'
 
 ## Expression evaluation
 <pre><code>
+# key and value can be substituted
+echo '{"foo": "A", "bar": ["X", "Y"]}' | jq '{(.foo): .bar[]}'
+{"A": "X"}
+{"A": "Y"}
 </code></pre>
 <hr>
 
+## Operators
+<pre><code>
+# Adding fields 
+echo '{"foo": 10}' | jq '.foo + 1'
+11
+# Adding arrays
+echo '{"foo": [1,2,3], "bar": [11,12,13]}' | jq '.foo + .bar'
+[1,2,3,11,12,13]
+</code></pre>
