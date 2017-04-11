@@ -19,7 +19,7 @@ vowpal-wabbit (https://github.com/JohnLangford/vowpal_wabbit) as a versatile com
     cd data-science
     vagrant init data-science-toolbox/data-science-at-the-command-line
     vagrant up
-    vagant ssh
+    vagrant ssh
   </code></pre>
 * Once in the virtual machine, install the vowpal wabbit library. 
   * You can install it directly from source https://github.com/JohnLangford/vowpal_wabbit
