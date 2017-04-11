@@ -47,7 +47,7 @@ Extract faculty names from the CDSE website (http://www.buffalo.edu/cdse/faculty
 ### Using CSS3 selector
 curl http://www.buffalo.edu/cdse/faculty/faculty_directory.html  | scrape -e ".staff_name_bolded > a"
 ### Using XPath Query
-curl http://www.buffalo.edu/cdse/faculty/faculty_directory.html  | scrape -e "data(//span/a[@target='_blank'])"
+curl http://www.buffalo.edu/cdse/faculty/faculty_directory.html  | scrape -e "//span/a[@target='_blank']"
 </code></pre>
 
 
