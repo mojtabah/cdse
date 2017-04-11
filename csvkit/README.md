@@ -34,7 +34,6 @@ csvcut -c county,item_name,total_cost data.csv | csvgrep -c county -m LANCASTER 
 ```bash
         curl -L -O https://raw.githubusercontent.com/wireservice/csvkit/master/examples/realdata/ks_1033_data.csv
         in2csv ne_1033_data.xlsx > ne_1033_data.csv
-        in2csv ks_1033_data.xlsx > ks_1033_data.csv
         csvstack -g region ne_1033_data.csv ks_1033_data.csv > region.csv
 ```
 
