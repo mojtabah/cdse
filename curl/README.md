@@ -19,16 +19,17 @@ curl -O ftp://speedtest.tele2.net/512KB.zip
 
 ## Toy example
 ```bash
-    htmldoc=$(cat << EOF
-        <div id=a>
-            <a href="x.pdf">x</a>
-        </div>
-        <div id=b>
-            <a href="png.png">y</a>
-            <a href="pdf.pdf">y</a>
-        </div>
-    EOF
-    )
+
+htmldoc=$(cat << EOF
+<div id=a>
+    <a href="x.pdf">x</a>
+</div>
+<div id=b>
+    <a href="png.png">y</a>
+    <a href="pdf.pdf">y</a>
+</div>
+EOF
+)
     # Select liks that end with pdf and are within div with id=b (Use CSS3 selector)
     echo $htmldoc | scrape -e "$b a[href$=pdf]"
 
