@@ -81,6 +81,9 @@ Explore the commits to the repository
 curl https://api.github.com/repos/sharatsc/cdse/commits | more
 curl https://api.github.com/repos/sharatsc/cdse/commits | jq '.[]|.commit.message'
 curl https://api.github.com/repos/sharatsc/cdse/commits | jq '.[] | {message: .commit.message, name: .commit.committer.name}'
+
+# Convert to CSV
+curl https://api.github.com/repos/sharatsc/cdse/commits | jq -c '.[] | {"message": .commit.message, "name": .commit.committer.name}' | json2csv -k message,name
 </code></pre>
 
 ## More examples
