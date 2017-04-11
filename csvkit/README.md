@@ -42,3 +42,6 @@ csvcut -c county,item_name,total_cost data.csv | csvgrep -c county -m LANCASTER 
 ```bash
 csvsql --query "select count(*) from data" data.csv
 ```
+
+### More examples
+* https://csvkit.readthedocs.io
