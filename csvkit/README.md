@@ -4,7 +4,7 @@
 This data was widely cited in the aftermath of the Ferguson, Missouri protests.
 
 ```bash
-curl -L -https://github.com/sharatsc/cdse/blob/master/csvkit/ne_1033_data.xls?raw=true -o ne_1033_data.xls
+curl -L https://github.com/sharatsc/cdse/blob/master/csvkit/ne_1033_data.xls?raw=true -o ne_1033_data.xls
 ```
 
 ### Convert to csv
