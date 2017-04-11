@@ -18,7 +18,7 @@ curl -O ftp://speedtest.tele2.net/512KB.zip
 # Scrape
 
 ## Toy example
-<verbatim>
+```bash
     htmldoc=$(cat << EOF
         <div id=a>
             <a href="x.pdf">x</a>
@@ -36,7 +36,7 @@ curl -O ftp://speedtest.tele2.net/512KB.zip
     echo $htmldoc | scrape -e "//a"
 
     <a href="pdf.pdf">y</a>
-</verbatim>
+```
 
 ## Exercise
 Extract faculty names from the CDSE website (http://www.buffalo.edu/cdse/faculty/faculty_directory.html)
