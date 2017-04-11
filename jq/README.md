@@ -78,6 +78,10 @@ echo '{"foo": [1,2,3], "bar": [11,12,13]}' | jq '.foo + .bar'
 Explore the commits to the repository
 <pre><code>
 # Getting commits
-curl https://api.github.com/repos/sharatsc/cdse/commits  | more
+curl https://api.github.com/repos/sharatsc/cdse/commits | more
 curl https://api.github.com/repos/sharatsc/cdse/commits | jq '.[]|.commit.message'
+curl https://api.github.com/repos/sharatsc/cdse/commits | jq '.[] | {message: .commit.message, name: .commit.committer.name}'
 </code></pre>
+
+## More examples
+https://stedolan.github.io/jq/tutorial/
